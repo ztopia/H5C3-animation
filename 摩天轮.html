@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,
+        body{
+            width:100%;
+            height:100%;
+            background:linear-gradient(to top,black ,blue);
+        }
+
+        .moon{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background:radial-gradient(150px 180px at bottom left,grey,yellow)yellow;
+            position: absolute;
+            right:20px;
+            top:30px;
+            box-shadow:8px -8px 40px 6px lightgray;
+        }
+
+       
+        .motianlun{
+            width: 700px;
+            height: 600px;
+           
+            position: relative;
+            top:20px;
+            left:200px;
+        }
+       
+        .pan ul{
+          position: absolute;
+            transform-origin: center center;
+         
+          animation:move 15s linear infinite;
+          left: 50%;
+          top:50%;
+          
+            
+        }
+        .pan ul li{
+            position: absolute;
+            list-style: none;
+            border-radius: 10px;
+            width: 10px;
+            height: 400px;
+            background-color: hotpink;
+            left: 50%;
+            top:50%;
+            margin-top: -200px;
+            margin-left: -5px;
+            
+        }
+
+        .pan li:nth-child(1){
+            transform: rotate(0deg);
+        }
+        .pan li:nth-child(2){
+            transform: rotate(30deg);
+        }
+        .pan li:nth-child(3){
+            transform: rotate(60deg);
+        }
+        .pan li:nth-child(4){
+            transform: rotate(90deg);
+        }
+        .pan li:nth-child(5){
+            transform: rotate(120deg);
+        }
+        .pan li:nth-child(6){
+            transform: rotate(150deg);
+        }
+
+        @keyframes move {
+           from{}
+            to{
+                transform: rotate(360deg);
+            }
+        } 
+        @keyframes move1 {
+           from{}
+            to{
+                transform: rotate(-360deg);
+            }
+        } 
+        @keyframes move2 {
+           from{
+             
+           }
+            to{
+                transform: rotate(-390deg);
+            }
+        } 
+        @keyframes move3 {
+           from{
+             
+           }
+            to{
+                transform: rotate(-420deg);
+            }
+        } 
+        @keyframes move4 {
+           from{
+             
+           }
+            to{
+                transform: rotate(-450deg);
+            }
+        } 
+        @keyframes move5 {
+           from{
+             
+           }
+            to{
+                transform: rotate(-480deg);
+            }
+        } 
+        @keyframes move6 {
+           from{
+             
+           }
+            to{
+                transform: rotate(-510deg);
+            }
+        } 
+
+      
+        .s1{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+           
+            animation:move1 15s linear infinite;
+        }
+        .s1::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s1::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px orange;
+            animation: s1a 2s infinite linear alternate;
+        }
+        @keyframes s1a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px orange;
+            }
+        }
+        .s2{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-30deg);
+            animation:move2 15s linear infinite;
+        }
+        .s2::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s2::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px blueviolet;
+            animation: s2a 3s infinite linear alternate;
+        }
+        @keyframes s2a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px blueviolet;
+            }
+        }
+        .s3{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-60deg);
+            animation:move3 15s linear infinite;
+        }
+        .s3::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s3::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px lightcoral;
+            animation: s3a 2s infinite linear alternate;
+        }
+        @keyframes s3a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px lightcoral;
+            }
+        }
+        .s4{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-90deg);
+            animation:move4 15s linear infinite;
+        }
+        .s4::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s4::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px lightseagreen;
+            animation: s4a 3s infinite linear alternate;
+        }
+        @keyframes s4a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px lightseagreen;
+            }
+        }
+        .s5{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-120deg);
+            animation:move5 15s linear infinite;
+        }
+        .s5::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s5::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px yellow;
+            animation: s5a 2s infinite linear alternate;
+        }
+        @keyframes s5a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px yellow;
+            }
+        }
+        .s6{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-150deg);
+            animation:move6 15s linear infinite;
+        }
+        .s6::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .s6::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px red;
+            animation: s6a 3s infinite linear alternate;
+        }
+        @keyframes s6a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px red;
+            }
+        }
+
+
+
+
+        .b1{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow; 
+            bottom: 0px;
+            animation:move1 15s linear infinite;
+        }
+        .b1::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b1::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px blue;
+            animation: b1a 1s infinite linear alternate;
+        }
+        @keyframes b1a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px blue;
+            }
+        }
+        .b2{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-30deg);
+            animation:move2 15s linear infinite;
+            bottom:0px;
+        }
+        .b2::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b2::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px pink;
+            animation: b2a 1s infinite linear alternate;
+        }
+        @keyframes b2a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px pink;
+            }
+        }
+        .b3{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-60deg);
+            animation:move3 15s linear infinite;
+            bottom:0px;
+        }
+        .b3::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b3::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px hotpink;
+            animation: b3a 1s infinite linear alternate;
+        }
+        @keyframes b3a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px hotpink;
+            }
+        }
+        .b4{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-90deg);
+            animation:move4 15s linear infinite;
+            bottom:0px;
+        }
+        .b4::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b4::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px orangered;
+            animation: b4a 1s infinite linear alternate;
+        }
+        @keyframes b4a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px orangered;
+            }
+        }
+        .b5{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-120deg);
+            animation:move5 15s linear infinite;
+            bottom:0px;
+        }
+        .b5::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b5::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px bisque;
+            animation: b5a 1s infinite linear alternate;
+        }
+        @keyframes b5a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px bisque;
+            }
+        }
+        .b6{
+            position: absolute;
+            width: 10px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(-150deg);
+            animation:move6 15s linear infinite;
+            bottom:0px;
+        }
+        .b6::before{
+            content:"";
+            width: 2px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top:30px;
+            left:5px;
+        }
+        .b6::after{
+            content:"";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: green;
+            top:60px;
+            left:-8px;
+            box-shadow: 0 0 30px 3px gold;
+            animation: b6a 1s infinite linear alternate;
+        }
+        @keyframes b6a {
+            from{}
+            to{
+                box-shadow: 0 0 30px 10px gold;
+            }
+        }
+
+        span::after{
+            border-radius: 50%;
+        }
+        b::after{
+            border-radius: 50%;
+        }
+        span{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+        b{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+
+        .bottom{
+            width: 40px;
+            height: 300px;
+            position: absolute;
+            background-color: lightslategray;
+            transform:  skew(-45deg);
+            left: 180px;
+            top:300px;
+           
+        }
+        .bottom::before{
+            content: "";
+            width: 40px;
+            height: 300px;
+            position: absolute;
+            background-color: lightslategray;
+            transform:  skew(59deg);
+            left:250px;
+        }
+
+        .firework{
+            width: 60px;
+            height: 100px;
+            /* background-color: purple; */
+            position: absolute;
+            top: 550px;
+            left: 500px;
+        }
+        .firework::before{
+            content:"";
+            width: 20px;
+            height: 50px;
+            position: absolute;
+            background-color: orange;
+            border-radius: 10px;
+            left:50%;
+            top:35px;
+            margin-left: -8px;
+            z-index: 3;
+           transform: rotate(30deg);
+           animation:boomturn 1.5s ease-out infinite alternate;
+           transform-origin: center center;
+        }
+
+        .firework::after{
+            content:"";
+            width: 60px;
+            height: 30px;
+            background-color: purple;
+            position: absolute;
+            bottom:0;
+            border-radius: 50% 50% 0 0;
+        }
+       
+
+        .boom1 {
+            position: absolute;
+            z-index: 5;
+            width: 5px;
+            height: 15px;
+            background-color: #fff;
+            transform: rotate(30deg);
+            top: 45px;
+            left: 30px;
+            animation: 3s firework1 ease-out infinite ;
+        }
+        .boom .ul1{
+            position: absolute;
+           
+           
+        }
+        .boom .ul1 li{
+            /* background-color: red; */
+            list-style: none;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 500px;
+            top:-400px;
+
+        }
+
+        @keyframes firework1 {
+            form{}
+            to{
+                top:-400px;
+                left:500px;
+                width: 8px;
+                height: 8px;
+                background-color: orange;
+                border-radius: 50%;
+            }
+           
+        }
+        @keyframes li1 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(120deg);
+                left:700px;
+
+            }
+        }
+
+        .li1{
+            background-color: purple;
+            transform: rotate(90deg);
+            animation: li1 3s ease-out 3s infinite;
+        }
+        @keyframes li2 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(0deg);
+                top:-600px;
+
+            }
+        }
+
+        .li2{
+            background-color: yellowgreen;
+            transform: rotate(0deg);
+            animation: li2 3s ease-out 3s infinite;
+        }
+        @keyframes li3 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(-70deg);
+                top:-550px;
+                left:360px;
+            }
+        }
+
+        .li3{
+            background-color: yellow;
+            transform: rotate(-40deg);
+            animation: li3 3s ease-out 3s infinite;
+        }
+        @keyframes li4 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(45deg);
+                top:-550px;
+                left:650px;
+            }
+        }
+
+        .li4{
+            background-color: red;
+            transform: rotate(60deg);
+            animation: li4 3s ease-out 3s infinite;
+        }
+        @keyframes li5 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(150deg);
+                top:-350px;
+                left:650px;
+            }
+        }
+
+        .li5{
+            background-color: orange;
+            transform: rotate(120deg);
+            animation: li5 3s ease-out 3s infinite;
+        }
+        @keyframes li6 {
+            from{}
+            to{
+                width: 10px;
+                height: 70px;
+                transform: rotate(-150deg);
+                top:-350px;
+                left:450px;
+            }
+        }
+
+        .li6{
+            background-color: orange;
+            transform: rotate(-150deg);
+            animation: li6 3s ease-out 3s infinite;
+        }
+        @keyframes boomturn{
+            from{}
+            to{
+                transform: rotate(-30deg)
+            }
+        }
+        
+       .boom2{
+            position: absolute;
+            /* z-index: 5; */
+            width: 5px;
+            height: 15px;
+            background-color: #fff;
+            transform: rotate(-30deg);
+            top: 45px;
+            left: 30px;
+            animation: 3s firework2 ease-out infinite 1.5s ;
+       }
+       @keyframes firework2 {
+           from{}
+           to{
+               left: -300px;
+               top:-400px;
+               background-color: orange;
+               border-radius: 50%;
+               width: 10px;
+               height: 10px;
+           }
+       }
+
+       .ff{
+           position: absolute;
+           width: 10px;
+           height: 10px;
+           /* background-color: #fff; */
+           left: -300px;
+           top: -400px;
+
+       }
+       .ff1{
+           position: absolute;
+           width: 0px;
+           height: 0px;
+           border-radius: 50%;
+           box-shadow: 0 0 15px 0px orangered;
+           left:25px;
+           top:-12px;
+           animation: ff1 3s ease-out infinite 4.5s;
+       }
+       @keyframes ff1 {
+           from{}
+           to{
+            width: 100px;
+           height: 50px;
+           box-shadow: 0 0 15px 5px orangered;
+
+           }
+       }
+       .ff2{
+           position: absolute;
+           width: 0px;
+           height: 0px;
+           border-radius: 50%;
+           box-shadow: 0 0 15px 0px yellow;
+           /* left:-25px;
+           top:-12px; */
+           animation: ff2 3s ease-out infinite 5s;
+       }
+       @keyframes ff2 {
+           from{}
+           to{
+            width: 100px;
+           height: 50px;
+           box-shadow: 0 0 15px 5px yellow;
+
+           }
+       }
+       .ff3{
+           position: absolute;
+           width: 0px;
+           height: 0px;
+           border-radius: 50%;
+           box-shadow: 0 0 15px 0px green;
+           left:-45px;
+           top:-32px;
+           animation: ff3 3s ease-out infinite 5.5s;
+       }
+       @keyframes ff3 {
+           from{}
+           to{
+            width: 150px;
+           height: 80px;
+           box-shadow: 0 0 15px 5px green;
+
+           }
+       }
+
+    .star{
+        position: absolute;
+        width: 80px;
+        height: 100px;
+        top:30px;
+        left:30px;
+        /* background-color: #fff; */
+    }
+    .star1{
+        width: 10px;
+        height: 40px;
+        position: absolute;
+        background-color: red;
+        left: 35px;
+        top:15px;
+        border-radius: 0px;
+    }
+    .star1::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        background-color: purple;
+        left: -10px;
+        border-radius: 0px;
+    }
+    .star1::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        background-color: yellow;
+        left: 10px;
+        border-radius: 0px;
+    }
+    .star2{
+        position: absolute;
+        width: 60px;
+        height: 15px;
+        background-color: red;
+        left:10px;
+        border-radius: 15px 15px 0 0 ;
+
+    }
+    .star2::before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 40px;
+        background-color: #fff;
+        top:15px;
+        border-radius: 0 0 0 100%;
+    }
+    .star2::after{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 40px;
+        background-color: #fff;
+        top:15px;
+        border-radius: 0 0 100% 0;
+        left:45px;
+    }
+
+    .star3{
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        background-color: brown;
+        border-radius: 5px;
+        top:70px;
+        left:20px;
+    }
+
+    .star3::before{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        background-color: #fff;
+        top:-15px;
+        left:10px;
+
+    }
+    .star3::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        background-color: #fff;
+        top:-15px;
+        left:26px;
+        border-radius: 0;
+
+    }
+    .star{
+        animation: hot 15s linear infinite alternate;
+    }
+    @keyframes hot {
+       30%{
+           left:900px;
+           top:30px;
+       }
+       50%{
+        left:900px;
+           top:500px;
+       }
+       80%{
+        left:900px;
+           top:500px;
+           top:30px;
+       }
+       100%{
+           left:900px;
+           top:500px;
+           top:30px;
+           left:30px;
+       }
+    }
+    </style>
+</head>
+<body>
+        <div class="star">
+            <span class="star1"></span>
+            <span class="star2"></span>
+            <span class="star3"></span>
+        </div>
+        <div class="moon"></div>
+        <div class="motianlun">
+            <div class="bottom"> </div>
+            <div class="top">
+                <div class="pan">
+                    <ul>
+                        <li><span class="s1"></span><b class="b1"></b></li>
+                        <li><span class="s2"></span><b class="b2"></b></li>
+                        <li><span class="s3"></span><b class="b3"></b></li>
+                        <li><span class="s4"></span><b class="b4"></b></li>
+                        <li><span class="s5"></span><b class="b5"></b></li>
+                        <li><span class="s6"></span><b class="b6"></b></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="firework">
+            <div class="ff">
+                <span class="ff1"></span>
+                <span class="ff2"></span>
+                <span class="ff3"></span>
+                <span class="ff4"></span>
+            </div>
+            <div class="boom">
+                <span class="boom1"></span>
+                <span class="boom2"></span>
+                <ul class="ul1">
+                    <li class="li1"></li>
+                    <li class="li2"></li>
+                    <li class="li3"></li>
+                    <li class="li4"></li>
+                    <li class="li5"></li>
+                    <li class="li6"></li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
